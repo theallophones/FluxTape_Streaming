@@ -121,7 +121,7 @@ versions = [
             "spatialize": "wide",
             "backing_vocals": "on"
         },
-        "audio_url": "https://raw.githubusercontent.com/theallophones/audio/main/lyricsB.mp3"
+        "audio_url": "https://raw.githubusercontent.com/theallophones/audio/main/groove.mp3"
     },
     {
         "id": 2,
@@ -135,7 +135,7 @@ versions = [
             "spatialize": "narrow",
             "backing_vocals": "off"
         },
-        "audio_url": "https://raw.githubusercontent.com/theallophones/audio/main/harmony_wide.mp3"
+        "audio_url": "https://raw.githubusercontent.com/theallophones/audio/main/groove.mp3"
     },
     {
         "id": 3,
@@ -149,7 +149,7 @@ versions = [
             "spatialize": "wide",
             "backing_vocals": "on"
         },
-        "audio_url": "https://raw.githubusercontent.com/theallophones/audio/main/adlibA.mp3"
+        "audio_url": "https://raw.githubusercontent.com/theallophones/audio/main/groove.mp3"
     },
     {
         "id": 4,
@@ -163,7 +163,7 @@ versions = [
             "spatialize": "narrow",
             "backing_vocals": "on"
         },
-        "audio_url": "https://raw.githubusercontent.com/theallophones/audio/main/soloB.mp3"
+        "audio_url": "https://raw.githubusercontent.com/theallophones/audio/main/groove.mp3"
     },
     {
         "id": 5,
@@ -177,9 +177,12 @@ versions = [
             "spatialize": "wide",
             "backing_vocals": "off"
         },
-        "audio_url": "https://raw.githubusercontent.com/theallophones/audio/main/harmony_narrow.mp3"
+        "audio_url": "https://raw.githubusercontent.com/theallophones/audio/main/groove.mp3"
     }
 ]
+
+# NOTE: In production, each version would have its own unique mixed-down audio file
+# that contributors created. For now, using groove.mp3 as placeholder.
 
 # Probabilistic selection based on rank (higher rank = more likely)
 def select_version_probabilistically(versions):
@@ -215,7 +218,7 @@ st.markdown("""
 <div class="track-card">
   <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:20px;">
     <div>
-      <h2 style="margin:0; font-size:28px; color:#ffffff;">Midnight Frequency</h2>
+      <h2 style="margin:0; font-size:28px; color:#ffffff;">Mid-nite Free-Quensee</h2>
       <p style="margin:5px 0 0 0; font-size:16px; color:#8b92a8;">by Zlisterr</p>
     </div>
     <div style="text-align:right;">
