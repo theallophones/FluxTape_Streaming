@@ -71,7 +71,7 @@ h1, h2, h3 {
   margin: 2px;
 }
 
-.research-banner {
+.info-banner {
   background: rgba(95, 107, 255, 0.05);
   border: 1px solid rgba(95, 107, 255, 0.2);
   border-radius: 8px;
@@ -198,24 +198,20 @@ if 'version_history' not in st.session_state:
 st.markdown("""
 <div style="text-align:center; margin-bottom:25px;">
   <h1 style="font-family:'Inter', sans-serif; font-weight:700; color:#ffffff; font-size:36px; margin-bottom:8px; letter-spacing:-0.5px;">
-    FluXTape Research Platform
+    FluXTape
   </h1>
   <p style="font-family:'Inter', sans-serif; font-weight:400; color:#8b92a8; font-size:14px; margin-top:0;">
-    Exploring Musical Variation and Listener Preference
+    Songs as Probability Clouds
   </p>
 </div>
 """, unsafe_allow_html=True)
 
-# Research context banner
+# Info banner
 st.markdown("""
-<div class="research-banner">
-  <div style="color:#ffffff; font-size:13px; font-weight:600; margin-bottom:10px;">
-    Research Study: Musical Version Preference
-  </div>
+<div class="info-banner">
   <div style="color:#8b92a8; font-size:12px; line-height:1.6;">
-    This platform investigates how listeners respond to musical variations within the same song. 
-    Each playback presents a different community-created version, selected probabilistically based on 
-    aggregate listener preferences. Your interactions help us understand patterns in musical taste.
+    Each time you play, a different community-created version is selected based on 
+    listener preferences. Your interactions help identify patterns in musical taste.
   </div>
 </div>
 """, unsafe_allow_html=True)
@@ -509,18 +505,22 @@ for i, version in enumerate(versions[:5]):
 st.markdown("""
 <div style="text-align:center; margin-top:50px; padding:25px; background:rgba(255,255,255,0.02); border-radius:8px;">
   <div style="color:#8b92a8; font-size:11px; font-family:'Inter', sans-serif; line-height:1.7;">
-    <strong style="color:#ffffff;">About This Study</strong><br><br>
-    FluXTape is a research platform developed at Georgia Institute of Technology investigating 
-    the relationship between musical variation and listener preference. By allowing multiple 
-    community-created versions of the same song to coexist, this platform generates data on 
-    how listeners respond to different combinations of musical elements.<br><br>
+    <div style="color:#ffffff; font-weight:600; margin-bottom:15px;">About This Study</div>
+    <div style="margin-bottom:12px;">
+      FluXTape is a research platform developed at Georgia Institute of Technology investigating 
+      the relationship between musical variation and listener preference. By allowing multiple 
+      community-created versions of the same song to coexist, this platform generates data on 
+      how listeners respond to different combinations of musical elements.
+    </div>
     
-    Each playback presents a version selected probabilistically based on cumulative preference scores, 
-    enabling observation of both individual choices and emergent collective patterns.<br><br>
+    <div style="margin-bottom:15px;">
+      Each playback presents a version selected probabilistically based on cumulative preference scores, 
+      enabling observation of both individual choices and emergent collective patterns.
+    </div>
     
-    <span style="font-size:10px; color:#6b7280;">
-    Platform designed by Peyman Kohsarnia • CCML Lab • Georgia Institute of Technology
-    </span>
+    <div style="font-size:10px; color:#6b7280; margin-top:15px;">
+      Platform designed by Peyman Salimi • CCML Lab • Georgia Institute of Technology
+    </div>
   </div>
 </div>
 """, unsafe_allow_html=True)
