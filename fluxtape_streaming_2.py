@@ -504,23 +504,19 @@ for i, version in enumerate(versions[:5]):
 # Footer - research context
 st.markdown("""
 <div style="text-align:center; margin-top:50px; padding:25px; background:rgba(255,255,255,0.02); border-radius:8px;">
-  <div style="color:#8b92a8; font-size:11px; font-family:'Inter', sans-serif; line-height:1.7;">
-    <div style="color:#ffffff; font-weight:600; margin-bottom:15px;">About This Study</div>
-    <div style="margin-bottom:12px;">
-      FluXTape is a research platform developed at Georgia Institute of Technology investigating 
-      the relationship between musical variation and listener preference. By allowing multiple 
-      community-created versions of the same song to coexist, this platform generates data on 
-      how listeners respond to different combinations of musical elements.
-    </div>
-    
-    <div style="margin-bottom:15px;">
-      Each playback presents a version selected probabilistically based on cumulative preference scores, 
-      enabling observation of both individual choices and emergent collective patterns.
-    </div>
-    
-    <div style="font-size:10px; color:#6b7280; margin-top:15px;">
-      Platform designed by Peyman Salimi • CCML Lab • Georgia Institute of Technology
-    </div>
-  </div>
+  <div style="color:#ffffff; font-weight:600; margin-bottom:15px; font-size:12px;">About This Study</div>
+  <p style="color:#8b92a8; font-size:11px; line-height:1.7; margin-bottom:12px;">
+    FluXTape is a research platform developed at Georgia Institute of Technology investigating 
+    the relationship between musical variation and listener preference. By allowing multiple 
+    community-created versions of the same song to coexist, this platform generates data on 
+    how listeners respond to different combinations of musical elements.
+  </p>
+  <p style="color:#8b92a8; font-size:11px; line-height:1.7; margin-bottom:15px;">
+    Each playback presents a version selected probabilistically based on cumulative preference scores, 
+    enabling observation of both individual choices and emergent collective patterns.
+  </p>
+  <p style="font-size:10px; color:#6b7280; margin-top:15px;">
+    Platform designed by Peyman Salimi • CCML Lab • Georgia Institute of Technology
+  </p>
 </div>
 """, unsafe_allow_html=True)
