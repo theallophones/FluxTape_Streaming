@@ -2,7 +2,7 @@ import streamlit as st
 import json
 import random
 
-st.set_page_config(layout="wide", page_title="FluXTape Research Platform", page_icon="🎵")
+st.set_page_config(layout="wide", page_title="FluXTape", page_icon="🎵")
 
 # Custom CSS - minimal and clean
 st.markdown("""
